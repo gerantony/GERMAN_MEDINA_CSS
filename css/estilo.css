@@ -1,15 +1,35 @@
+@font-face {
+  font-family: 'DancingScript';
+  src: url(..fuentes/DancingScript-Regular.otf);
+}
 body{
   background-color:#02010a;
+  font-family: DancingScript;
 }
 header{
-  background-color:#5b7989;
-  widh: 100px;
-  height: 120px;
+  background-color: #5b7989;
+  width: 900px;
+  height: 100px;
+  top: 0;
+}
+nav{
+  width: 40%;
+  height: 100px;
+  float: right;
 }
 header h1{
+  display: block;
+  margin: 5px;
+  padding: 15px 0px;
+  height: 100%;
+  width: 40%;
   color: white;
 }
 header a{
-  float: right;
-  padding: 0.5% 1%;
+  margin: 0.5% 3%;
+}
+#contenido{
+  width: 900px;
+  display: flex;
+  flex-flow: row wrap;
 }
