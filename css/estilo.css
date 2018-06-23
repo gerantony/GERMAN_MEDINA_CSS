@@ -1,0 +1,15 @@
+body{
+  background-color:#02010a;
+}
+header{
+  background-color:#5b7989;
+  widh: 100px;
+  height: 120px;
+}
+header h1{
+  color: white;
+}
+header a{
+  float: right;
+  padding: 0.5% 1%;
+}
