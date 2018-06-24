@@ -1,35 +1,47 @@
 @font-face {
   font-family: 'DancingScript';
-  src: url(..fuentes/DancingScript-Regular.otf);
+  src: url(../fuentes/DancingScript-Regular.otf);
 }
 body{
   background-color:#02010a;
-  font-family: DancingScript;
+  font-family: 'DancingScript', arial;
 }
-header{
-  background-color: #5b7989;
+#cabecera{
+  background-color: #5B7989;
   width: 900px;
-  height: 100px;
-  top: 0;
+
 }
-nav{
-  width: 40%;
-  height: 100px;
+#titulo{
+  display: inline-block;
+  text-decoration: none;
+  border: dotted;
+  width: 550px;
+}
+#menu{
+  display: inline-block;
+  border: dotted;
+  width: 250px;
+  text-align: right;
+  padding-right: 2%;
   float: right;
+  height: 90%;
 }
-header h1{
-  display: block;
-  margin: 5px;
-  padding: 15px 0px;
-  height: 100%;
-  width: 40%;
-  color: white;
+#menu a{
+  text-decoration: none;
+  padding-left: 5%;
 }
-header a{
-  margin: 0.5% 3%;
-}
-#contenido{
+.imagen1{
   width: 900px;
-  display: flex;
-  flex-flow: row wrap;
+  height: 350px;
+  background-color: #82C3A6;
+}
+.imagen2{
+  width: 900px;
+  height: 270px;
+  background-color: #D5C75F;
+}
+#piedepagina{
+  width: 900px;
+  height: 87px;
+  background-color: #C6D5C5;
 }
