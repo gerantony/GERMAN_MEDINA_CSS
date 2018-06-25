@@ -5,26 +5,37 @@
     <meta name="author" content="German Medina">
     <meta name="description" content="Sitio web para poner en practica conocimientos de CSS">
     <meta name="keywords" content="CSS3, efectos, sombras, transiciones, galeria, paisajes, retratos">
-    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilo.css">
     <title>Comenzando con la fotografia</title>
   </head>
   <body>
     <div class="contenido">
-      <header id=cabecera>
-        <!-- Título de la página -->
-        <h1 id="titulo">Comenzando con la fotografía
-         </h1>
-        <!-- MENU de página -->
-        <nav id="menu">
-          <a href="index.html">Inicio</a>
-          <a href="#">Paisajes</a>
-          <a href="#">Retratos</a>
-        </nav>
-      </header>
+      <div class="cabecera">
+        <header>
+          <!-- Título de la página -->
+          <div class="titulo">
+            <h1>Comenzando con la fotografía</h1>
+          </div>
+          <!-- MENU de página -->
+          <div class="menu">
+            <nav>
+              <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Paisajes</a></li>
+                <li><a href="#">Retratos</a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+      </div>
+
       <section id=centro>
         <div class="imagen1">
-
+          <figure>
+            <figcaption></figcaption>
+            <img src="imagenes\paisaje_prin.jpg" alt="Imagen central" class=imagencentral>
+          </figure>
         </div>
         <div class="imagen2">
 
