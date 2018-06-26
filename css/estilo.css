@@ -33,10 +33,20 @@ body{
   padding-left: 0.5em;
   text-shadow: 2px 2px #02010A;
 }
-.titulo a:link, .titulo a:hover, .titulo a:visited{
+.titulo a:link{
   color: white;
   text-decoration: none;
 }
+.titulo a:hover{
+  color: white;
+}
+.titulo a:visited{
+  color: white;
+}
+ .menu ul a:hover li{
+   text-decoration: overline;
+   color: rgba(1, 73, 126, 0.88);
+ }
 .menu{
   width: 50%;
 }
