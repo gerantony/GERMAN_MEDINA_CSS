@@ -11,39 +11,80 @@
   </head>
   <body>
     <div class="contenido">
-      <div class="cabecera">
-        <header>
+      <header>
+          <div class="cabecera">
           <!-- Título de la página -->
-          <div class="titulo">
-            <h1>Comenzando con la fotografía</h1>
-          </div>
+            <div class="titulo">
+              <a href="index.html"><strong>Comenzando con la fotografía</strong></a>
+            </div>
           <!-- MENU de página -->
-          <div class="menu">
-            <nav>
+            <div class="menu">
               <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="#">Paisajes</a></li>
-                <li><a href="#">Retratos</a></li>
+              <a href="index.html"><li><strong>Inicio</strong></li></a>
+              <a href="#"><li><strong>Paisajes</strong></li></a>
+              <a href="#"><li><strong>Retratos</strong></li></a>
               </ul>
-            </nav>
+            </div>
           </div>
         </header>
-      </div>
 
-      <section id=centro>
-        <div class="imagen1">
-          <figure>
-            <figcaption></figcaption>
-            <img src="imagenes\paisaje_prin.jpg" alt="Imagen central" class=imagencentral>
-          </figure>
-        </div>
-        <div class="imagen2">
-
+      <section>
+        <div class="imagenes">
+          <div class="imagen1">
+            <figure>
+              <figcaption></figcaption>
+              <img src="imagenes\paisaje_prin.jpg" alt="Imagen central">
+            </figure>
+          </div>
+          <div class="imagen2">
+            <figure>
+              <a href="#"><img src="imagenes\tucan_sec.jpg" alt="Link a Paisajes">
+              <figcaption>Paisajes</figcaption>
+            </figure>
+            </a>
+          </div>
+          <div class="imagen3">
+            <figure>
+              <a href="#"><img src="imagenes\retrato_ter.jpg" alt="Link a Retratos">
+              <figcaption>Retratos</figcaption>
+            </figure>
+            </a>
+          </div>
         </div>
       </section>
-      <footer id=piedepagina>
 
+      <footer id=piedepagina>
+        <div class="bloque1">
+          <h1>Contacto</h1>
+          <p>
+            <a href="mailto:info@fotografia.com">info@fotografia.com</a>
+            <br>
+            calle 5 con 3
+            <br>
+            Telefono: 123123123
+          </p>
+        </div>
+        <div class="bloque2">
+          <h1>Términos</h1>
+          <p>Conoce nuestros términos y condiciones...</p>
+        </div>
+        <div class="bloque3">
+          <h1>Redes Sociales</h1>
+          <p>
+            Comparte en nuestras redes
+          </p>
+          <a href="https://www.facebook.com/gerantony" target="_blank"><img src="imagenes\ico_facebook.png" alt="Facebook">Comenzando Fotografia</a>
+          <br>
+          <a href="https://twitter.com/gerantony1" target="_blank"><img src="imagenes\ico_twitter.png" alt="Facebook">@ComenzandoFotografia</a>
+          <br>
+          <a href="https://www.instagram.com/gerantony1" target="_blank"><img src="imagenes\ico_instagram.png" alt="Facebook">ComenzandoFotografia</a>
+        </div>
+        <div class="bloque4">
+          <h1>Derechos</h1>
+          <p>© Copyright - 2018</p>
+        </div>
       </footer>
+
     </div>
   </body>
 </html>
