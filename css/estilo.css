@@ -12,7 +12,18 @@ body{
   width: 900px;
   margin: 0 auto;
 }
+@keyframes slidein {
+  0% {
+    margin-top: 150%;
+  }
 
+  60% {
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+}
 .cabecera{
   background-color: #5B7989;
   display: flex;
@@ -20,6 +31,8 @@ body{
   border-radius: 10px 10px 0 0;
   -moz-border-radius: 10px 10px 0 0;
   -webkit-border-radius: 10px 10px 0 0;
+  animation-duration: 1s;
+  animation-name: slidein;
 }
 .contenido div {
   box-sizing: border-box;
