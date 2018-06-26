@@ -55,14 +55,15 @@ body{
   font-size: 20px;
   text-align: right;
   float: right;
-  margin: 0 15px 0 0
+  margin: 0 15px 0 0;
+  color: white;
 }
 .menu ul li a:link{
   color: white;
 }
-.menu ul li a:hover, .menu ul li a:visited{
-  text-decoration: none;
-  color: white;
+.menu a:hover{
+  text-decoration: overline;
+  color: rgb(201, 201, 201);
 }
 
 .imagenes{
@@ -73,7 +74,14 @@ body{
   text-align: center;
   font-size: 22px;
 }
-
+@keyframes giros {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(10deg);
+  }
+}
 
 .imagen1{
   background-color: #82C3A6;
@@ -86,21 +94,34 @@ body{
   background-color: #D5C75F;
   width: 50%;
 }
-.imagen2 a:link, .imagen 2 a:visited{
+.imagen2 a:link, .imagen2 a:visited{
   color: black;
 }
 .imagen2 img{
   width: 100%;
+  border: 2px black solid;
+  box-shadow: 2px 2px 0 #82C3A6;
+  transition: 1S;
+}
+.imagen2 img:hover{
+  transform: rotate(10deg);
 }
 .imagen3{
   background-color: #D5C75F;
   width: 50%;
+
 }
 .imagen3 a:link, .imagen3 a:visited{
   color: black;
 }
 .imagen3 img{
   width: 100%;
+  border: 2px black solid;
+  box-shadow: 2px 2px #82C3A6;
+    transition: 1S;
+}
+.imagen3 img:hover{
+  transform: translate(20px, -5px);
 }
 
 #piedepagina{
@@ -110,6 +131,7 @@ body{
   border-radius: 0 0 10px 10px;
   -moz-border-radius: 0 0 10px 10px;
   -webkit-border-radius: 0 0 10px 10px;
+  padding-bottom: 1em;
 }
 .bloque1{
   width: 25%;
@@ -117,16 +139,101 @@ body{
 }
 .bloque2{
   width: 25%;
+  padding-left: 1em;
 }
 .bloque3{
   width: 25%;
+  padding-left: 1em;
 }
 .bloque4{
   width: 25%;
+  padding-left: 1em;
 }
 p{
   font-size: 18px;
 }
 .bloque1 a:link, .bloque1 a:hover, .bloque1 a:visited{
   color: black;
+}
+
+@media (max-width: 480px){
+.contenido
+	{
+		width: 100%;
+	}
+	.cabecera
+	{
+	width: 100%;
+  text-align: center;
+  float: none;
+	}
+  .titulo{
+    width: 100%;
+  }
+  .menu{
+    width: 100%;
+  }
+  .menu ul{
+    justify-content: center;
+    padding: 0;
+  }
+	.imagenes{
+    width: 100%;
+  }
+  .imagen1{
+    width: 100%;
+  }
+  .imagen2{
+    width: 100%;
+  }
+  .imagen3{
+    width: 100%;
+  }
+
+	#piedepagina
+  {
+    	width: 100%;
+  }
+  .bloque1{
+    width: 100%;
+  }
+  .bloque2{
+    width: 100%;
+  }
+  .bloque3{
+    width: 100%;
+  }
+  .bloque4{
+    width: 100%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 780px){
+  .contenido
+  	{
+  		width: 100%;
+  	}
+  	.cabecera
+  	{
+  	width: 100%;
+    text-align: center;
+    float: none;
+  	}
+    .titulo{
+      width: 100%;
+    }
+    .menu{
+      width: 100%;
+    }
+    .menu ul{
+      justify-content: center;
+      padding: 0;
+    }
+    .imagenes{
+      width: 100%;
+    }
+    #piedepagina
+    {
+        width: 100%;
+    }
 }
