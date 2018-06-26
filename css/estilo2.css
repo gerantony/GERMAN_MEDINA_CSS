@@ -69,51 +69,35 @@ body{
 .imagenes{
   width: 900px;
   margin: 0 auto;
+  padding: 20px;
   display: flex;
   flex-flow: row wrap;
-  text-align: center;
-  font-size: 22px;
+  background-color: #D5C75F;
 }
 
-.imagen1{
-  background-color: #82C3A6;
-  width: 100%;
+.imagen1, .imagen2, .imagen3, .imagen4, .imagen5, .imagen6{
+  width: 33.30%;
+}
+
+.imagen4, .imagen5, .imagen6{
+  padding-top: 15px;
+}
+.imagenes img{
+  margin: : 15px 0 0 5px;
+  box-shadow: 2px 2px black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 .imagen1 img{
-    width: 100%;
+  -webkit-filter: blur(10px);
 }
-.imagen2{
-  background-color: #D5C75F;
-  width: 50%;
-}
-.imagen2 a:link, .imagen2 a:visited{
-  color: black;
-}
-.imagen2 img{
-  width: 100%;
-  border: 2px black solid;
-  box-shadow: 2px 2px 0 #82C3A6;
-  transition: 1S;
-}
-.imagen2 img:hover{
-  transform: rotate(10deg);
-}
-.imagen3{
-  background-color: #D5C75F;
-  width: 50%;
-
-}
-.imagen3 a:link, .imagen3 a:visited{
-  color: black;
+.imagen2 img, .imagen4 img, .imagen6 img{
+  -webkit-filter: grayscale(100%);
 }
 .imagen3 img{
-  width: 100%;
-  border: 2px black solid;
-  box-shadow: 2px 2px #82C3A6;
-  transition: 1S;
-}
-.imagen3 img:hover{
-  transform: translate(20px, -5px);
+  -webkit-filter: sepia(90%);
 }
 
 #piedepagina{
@@ -152,10 +136,12 @@ p{
 .contenido
 	{
 		width: 100%;
+    margin: 0;
 	}
 	.cabecera
 	{
 	width: 100%;
+  margin: 0;
   text-align: center;
   float: none;
 	}
@@ -171,20 +157,24 @@ p{
   }
 	.imagenes{
     width: 100%;
+    margin: 0;
   }
-  .imagen1{
+  .imagen1, .imagen2, .imagen3, .imagen4, .imagen5, .imagen6{
     width: 100%;
   }
-  .imagen2{
-    width: 100%;
+
+  .imagenes img{
+    display:block;
+    margin:auto;
   }
-  .imagen3{
-    width: 100%;
+  .imagen1 img, .imagen2 img, .imagen3 img{
+    margin-top: 15px;
   }
 
 	#piedepagina
   {
     	width: 100%;
+      margin: 0;
   }
   .bloque1{
     width: 100%;
@@ -224,8 +214,30 @@ p{
     .imagenes{
       width: 100%;
     }
+    .imagenes img{
+      width: 90%;
+      margin: auto;
+    }
+    .imagen1 img, .imagen2 img, .imagen3 img{
+      margin-top: 15px;
+    }
+    .imagen1, .imagen2{
+      width: 50%;
+    }
+    .imagen3, .imagen4{
+      width: 50%;
+    }
+    .imagen5, .imagen6{
+      width: 50%;
+    }
     #piedepagina
     {
         width: 100%;
+    }
+    .bloque1, .bloque2{
+      width: 50%;
+    }
+    .bloque3, .bloque4{
+      width: 50%;
     }
 }
